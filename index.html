@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swift Ride</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="main-page">
+      <div class="container">
+        <div class="main-page_header">
+          <div class="logo">
+            <img src="./img/logo.png" alt="" />
+          </div>
+          <div class="sign__btns">
+            <button class="sign" onclick="createUser()">Register</button>
+            <button class="sign" onclick="loginUser()">Login</button>
+          </div>
+        </div>
+        <div class="main-page_subheader">
+          <div class="delete-logout">
+            <button class="delete-logout_btn" onclick="logoutUser()">
+              Logout
+            </button>
+            <button class="delete-logout_btn" onclick="deleteUser()">
+              Delete account
+            </button>
+          </div>
+        </div>
+        <div class="main-page_img">
+          <img src="./img/landing_img.png" alt="" />
+        </div>
+
+        <div class="userName__block">
+          <h3 class="userName"></h3>
+        </div>
+        <div class="main-page_order">
+          <h1 class="sub_title">Taxi Ordering System</h1>
+          <div class="location__block">
+            <label for="location">Enter your location:</label>
+            <input type="text" id="location" />
+          </div>
+          <div class="car-type__block">
+            <label for="car-type">Select car type:</label>
+            <select id="car-type">
+              <option value="standard">Standard</option>
+              <option value="premium">Premium</option>
+              <option value="luxury">Luxury</option>
+            </select>
+          </div>
+          <button id="order-button">Place Order</button>
+          <div id="order-details">
+            <h2>Order Details</h2>
+            <p>Location: <span id="order-location"></span></p>
+            <p>Car Type: <span id="order-car-type"></span></p>
+            <p>Total Price: $<span id="order-price"></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
